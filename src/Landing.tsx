@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Scroll from "./components/Scroll";
 
-function App() {
+function Landing() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -24,4 +24,4 @@ function App() {
     );
 }
 
-export default App;
+export default Landing;

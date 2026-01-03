@@ -36,9 +36,10 @@ img {
 }
 
 @theme {
-  --animate-from-bottom: from-bottom 0.8s ease-out forwards;
-  --animate-from-bottom-right: bottom-right-to-top-left 2s linear forwards;
-  --animate-from-bottom-left: bottom-left-to-top-right 2s linear forwards;
+  --animate-from-bottom: from-bottom 1s ease-out forwards;
+  --animate-from-bottom-shadow: from-bottom-shadow 1s ease-out forwards;
+  --animate-from-bottom-right: bottom-right-to-top-left 3s cubic-bezier(0.1, 0, 1, 1) forwards;
+  --animate-from-bottom-left: bottom-left-to-top-right 3s cubic-bezier(0.1, 0, 1, 1) forwards;
 }
 
 @layer utilities {
@@ -46,8 +47,12 @@ img {
     animation-delay: 2s;
   }
 
-  .delay-500ms {
-    animation-delay: 500ms;
+  .delay-100ms {
+    animation-delay: 100ms;
+  }
+
+  .delay-200ms {
+    animation-delay: 200ms;
   }
 
   .bg-size-200 {
@@ -66,10 +71,21 @@ img {
   }
 }
 
+@keyframes from-bottom-shadow {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  to {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+}
+
 @keyframes bottom-right-to-top-left {
   from {
     top: 95vh;
-    left: 150vw;
+    left: 120vw;
     transform: scaleX(-1);
     opacity: 1;
   }
@@ -83,12 +99,12 @@ img {
 
 @keyframes bottom-left-to-top-right {
   from {
-    top: 95vh;
-    left: -50vw;
+    top: 75vh;
+    left: -20vw;
     opacity: 1;
   }
   to {
-    top: 25vh;
+    top: 5vh;
     left: 150vw;
     opacity: 1;
   }

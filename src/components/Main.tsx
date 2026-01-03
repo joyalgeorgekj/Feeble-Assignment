@@ -23,16 +23,16 @@ function Main() {
                 Mac Mini.{" "}
             </p>
 
-            <div className="buttons mx-auto flex justify-between gap-3">
+            <div className="buttons mx-auto flex justify-between gap-3 mt-6">
                 <button
                     type="button"
-                    className="py-3 px-5 bg-[#007AFF] text-white text-[18px] rounded-full"
+                    className="py-3 px-5 bg-[#007AFF] text-white text-[18px] font-medium rounded-full"
                 >
                     Get Started
                 </button>
                 <button
                     type="button"
-                    className="flex py-3 px-5 text-[18px] gap-3 border border-[#6C788F] rounded-full"
+                    className="flex py-3 px-5 text-[18px] font-medium gap-3 border border-[#6C788F] rounded-full"
                 >
                     <img src={MacSVG} alt="Mac" />
                     <img src={BarSVG} alt="seperator" />

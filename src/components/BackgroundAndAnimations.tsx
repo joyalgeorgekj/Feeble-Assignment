@@ -1,10 +1,10 @@
-import CloudSVG from "../assets/cloud.svg";
-import SmallBirdSVG from "../assets/smallbird.svg";
-import Bird1SVG from "../assets/bird1.svg";
-import Bird2SVG from "../assets/bird2.svg";
-import Bird3SVG from "../assets/bird3.svg";
-import Bird4SVG from "../assets/bird4.svg";
-import AnimatedBird from "../assets/animatedbird.svg";
+import CloudSVG from "../assets/svg/cloud.svg";
+import SmallBirdSVG from "../assets/svg/smallbird.svg";
+import Bird1SVG from "../assets/svg/bird1.svg";
+import Bird2SVG from "../assets/svg/bird2.svg";
+import Bird3SVG from "../assets/svg/bird3.svg";
+import Bird4SVG from "../assets/svg/bird4.svg";
+import AnimatedBird from "../assets/svg/animatedbird.svg";
 import { findPercent } from "../helper/findPercent";
 
 function BackgroundAndAnimations() {

@@ -13,7 +13,7 @@ function Header() {
     };
     
     return (
-        <header className="relative bg-white p-5 mx-auto lg:top-10 lg:w-5/6 lg:max-w-300 lg:rounded-[200px] shadow-md z-10">
+        <header className="relative bg-white px-6 py-5 mx-auto lg:top-10 lg:w-5/6 lg:max-w-300 lg:rounded-[200px] shadow-sm z-10">
             <nav className="flex justify-between items-center gap-4">
                 {/* Logo */}
 
@@ -85,7 +85,7 @@ function Header() {
                     <li>
                         <button
                             type="button"
-                            className="bg-linear-to-r bg-size-200 bg-left hover:bg-right font-medium transition-all from-[#007AFF] to-white py-2.75 px-4.5 text-white from-50% to-50% rounded-[43px] hover:bg-white hover:text-[#007AFF] shadow-md shadow-neutral-500/25 duration-500"
+                            className="bg-linear-to-r bg-size-200 bg-left hover:bg-right font-medium transition-all from-[#007AFF] text-base to-white py-2.75 px-4.5 text-white from-50% to-50% rounded-[43px] hover:bg-white hover:text-[#007AFF] shadow-sm shadow-neutral-500/25 duration-500"
                         >
                             Contact Sales
                         </button>

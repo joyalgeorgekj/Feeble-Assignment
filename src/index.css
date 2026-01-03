@@ -1,0 +1,95 @@
+@import url("https://fonts.cdnfonts.com/css/general-sans?styles=135303");
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+@import "tailwindcss";
+
+body {
+    width: 100dvw;
+    background: #e4f2ff;
+    background: radial-gradient(
+        circle,
+        rgba(228, 242, 255, 1) 90%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    font-family: "General Sans", sans-serif;
+    position: relative;
+    cursor: default;
+    overflow-x: hidden;
+}
+
+a {
+    color: #8c97a8;
+    font-weight: 500;
+}
+
+a:hover, a:focus-visible {
+    color: black;
+    outline: 0;
+}
+
+h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+img {
+  max-width: none;
+}
+
+@theme {
+  --animate-from-bottom: from-bottom 0.8s ease-out forwards;
+  --animate-from-bottom-right: bottom-right-to-top-left 2s linear forwards;
+  --animate-from-bottom-left: bottom-left-to-top-right 2s linear forwards;
+}
+
+@layer utilities {
+  .delay-2s {
+    animation-delay: 2s;
+  }
+
+  .delay-500ms {
+    animation-delay: 500ms;
+  }
+
+  .bg-size-200 {
+    background-size: 200%;
+  }
+}
+
+@keyframes from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottom-right-to-top-left {
+  from {
+    top: 95vh;
+    left: 150vw;
+    transform: scaleX(-1);
+    opacity: 1;
+  }
+  to {
+    top: 25vh;
+    left: -50vw;
+    opacity: 1;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes bottom-left-to-top-right {
+  from {
+    top: 95vh;
+    left: -50vw;
+    opacity: 1;
+  }
+  to {
+    top: 25vh;
+    left: 150vw;
+    opacity: 1;
+  }
+}

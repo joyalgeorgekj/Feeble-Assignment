@@ -37,6 +37,7 @@ img {
 
 @theme {
   --animate-from-bottom: from-bottom 1s ease-out forwards;
+  --animate-from-top: from-top 1s ease-out forwards;
   --animate-from-bottom-shadow: from-bottom-shadow 1s ease-out forwards;
   --animate-from-bottom-right: bottom-right-to-top-left 3s cubic-bezier(0.1, 0, 1, 1) forwards;
   --animate-from-bottom-left: bottom-left-to-top-right 3s cubic-bezier(0.1, 0, 1, 1) forwards;
@@ -68,6 +69,17 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes from-top {
+  from {
+    opacity: 0;
+    top: -20vh;
+  }
+  to {
+    opacity: 1;
+    top: 0;
   }
 }
 

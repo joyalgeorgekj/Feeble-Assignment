@@ -4,11 +4,17 @@ import Bird1SVG from "../assets/svg/bird1.svg";
 import Bird2SVG from "../assets/svg/bird2.svg";
 import Bird3SVG from "../assets/svg/bird3.svg";
 import Bird4SVG from "../assets/svg/bird4.svg";
+import CircleSVG from "../assets/svg/circle.svg";
 import AnimatedBird from "../assets/svg/animatedbird.svg";
 import BGImage from "./BGImage";
 
 function Background() {
     const backgrounds = [
+        {
+            src: CircleSVG,
+            alt: "circle",
+            className: "animate-from-top opacity-0 delay-100ms"
+        },
         {
             src: SmallBirdSVG,
             alt: "small bird",

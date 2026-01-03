@@ -1,4 +1,4 @@
-import BackgroundAndAnimations from "./components/BackgroundAndAnimations";
+import Background from "./components/Background";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Scroll from "./components/Scroll";
@@ -9,7 +9,7 @@ function App() {
             <Header />
             <Main />
             <Scroll />
-            <BackgroundAndAnimations />
+            <Background />
         </div>
     );
 }

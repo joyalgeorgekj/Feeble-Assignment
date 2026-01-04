@@ -4,7 +4,7 @@ import BarSVG from "../assets/svg/bar.svg";
 
 function Main() {
     return (
-        <main className="flex gap-6 flex-col relative top-[102.5px] justify-center py-12 md:py-0">
+        <main className="flex gap-6 flex-col relative top-[102.5px] justify-center">
             <div className="bg-white rounded-full w-fit flex px-2 py-1 mx-auto gap-2 text-[#006FE8]">
                 <img src={DotsSVG} alt="Dots" />
                 <p className="font-medium">#1 iMessage Automation Tool</p>

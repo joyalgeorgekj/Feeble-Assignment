@@ -20,6 +20,7 @@
 - Responsive behavior with desktop parity preserved
 - Optimized font loading and asset handling
 - Modular, readable, and maintainable component structure
+- Decorative animations respect `prefers-reduced-motion`
 
 ---
 

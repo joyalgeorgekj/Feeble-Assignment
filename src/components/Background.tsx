@@ -9,53 +9,63 @@ import AnimatedBird from "../assets/svg/animatedbird.svg";
 import BGImage from "./BGImage";
 
 function Background() {
-    const backgrounds = [
+    const backgrounds: {
+        src: string;
+        className?: string;
+        top?: number;
+        left?: number;
+        alt: string;
+    }[] = [
         {
             src: CircleSVG,
             alt: "circle",
-            className: "animate-from-top opacity-0 delay-100ms"
+            className: "animate-from-top opacity-0 delay-100ms",
         },
         {
             src: SmallBirdSVG,
             alt: "small bird",
             top: 291,
             left: 298.18,
-            className: "animate-from-bottom opacity-0 w-[8%] lg:w-auto delay-100ms",
+            className:
+                "animate-from-bottom opacity-0 w-[8%] lg:w-auto delay-100ms",
         },
         {
             src: SmallBirdSVG,
             alt: "small bird",
             top: 329.02,
             left: 495.3,
-            className:  "w-[8%] lg:w-auto"
+            className: "w-[8%] lg:w-auto",
         },
         {
             src: SmallBirdSVG,
             alt: "small bird",
             top: 329.02,
             left: 495.3,
-            className: "animate-from-bottom-shadow opacity-0 w-[8%] lg:w-auto delay-100ms"
+            className:
+                "animate-from-bottom-shadow opacity-0 w-[8%] lg:w-auto delay-100ms",
         },
         {
             src: SmallBirdSVG,
             alt: "small bird",
             top: 305,
             left: 1406.18,
-            className: "animate-from-bottom opacity-0 w-[8%] lg:w-auto delay-100ms",
+            className:
+                "animate-from-bottom opacity-0 w-[8%] lg:w-auto delay-100ms",
         },
         {
             src: SmallBirdSVG,
             alt: "small bird",
             top: 465,
             left: 1446.18,
-            className:  "w-[8%] lg:w-auto"
+            className: "w-[8%] lg:w-auto",
         },
         {
             src: SmallBirdSVG,
             alt: "small bird",
             top: 465,
             left: 1446.18,
-            className: "animate-from-bottom-shadow opacity-0 w-[8%] lg:w-auto delay-100ms"
+            className:
+                "animate-from-bottom-shadow opacity-0 w-[8%] lg:w-auto delay-100ms",
         },
         {
             src: Bird1SVG,

@@ -1,17 +1,11 @@
 import { useState } from "react";
 import LogoSVG from "../assets/svg/logo.svg";
 import Links from "./Links";
+import { ROUTES } from "../constants/route";
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-    const routes = {
-        tutorial: "How it works",
-        pricing: "Pricing",
-        usecase: "Use Case",
-        faq: "FAQ",
-    };
-    
     return (
         <header className="relative bg-white px-6 py-5 mx-auto lg:top-10 lg:w-5/6 lg:max-w-300 lg:rounded-[200px] shadow-sm z-10">
             <nav className="flex justify-between items-center gap-4">
@@ -19,53 +13,40 @@ function Header() {
 
                 <ul id="logo">
                     <li>
-                        <img className="w-3/4 md:w-auto" src={LogoSVG} alt="Logo" />
+                        <img
+                            className="w-3/4 md:w-auto"
+                            src={LogoSVG}
+                            alt="Logo"
+                        />
                     </li>
                 </ul>
 
-                {/* Desktop Routes */}
+                {/* Responsive Routes */}
 
                 <ul
                     id="routes"
-                    className="hidden lg:flex gap-4 text-[#8C97A8]"
+                    className={
+                        !menuOpen
+                            ? "hidden lg:flex gap-4 text-[#8C97A8]"
+                            : "lg:hidden p-14 flex flex-col gap-4 text-[#8C97A8] items-center absolute top-full right-0 left-0 bg-white shadow-md shadow-neutral-600"
+                    }
                 >
-                    {Object.keys(routes).map((val, ind) => (
+                    {Object.keys(ROUTES).map((val, ind) => (
                         <Links
                             key={ind}
                             ref={val}
                             label={
-                                routes[val as keyof typeof routes]
-                                    ? routes[val as keyof typeof routes]
+                                ROUTES[val as keyof typeof ROUTES]
+                                    ? ROUTES[val as keyof typeof ROUTES]
                                     : "Error"
                             }
                         />
                     ))}
                 </ul>
 
-                {/* Mobile Routes */}
-
-                {menuOpen && (
-                    <ul
-                        id="mobile-routes"
-                        className="lg:hidden p-14 flex flex-col gap-4 text-[#8C97A8] items-center absolute top-full right-0 left-0 bg-white shadow-md shadow-neutral-600"
-                    >
-                        {Object.keys(routes).map((val, ind) => (
-                            <Links
-                                key={ind}
-                                ref={val}
-                                label={
-                                    routes[val as keyof typeof routes] ??
-                                    "Error"
-                                }
-                            />
-                        ))}
-                    </ul>
-                )}
-
                 {/* Click to Action */}
 
                 <ul id="cta" className="flex gap-4">
-
                     {/* Hamburg button */}
                     <button
                         type="button"

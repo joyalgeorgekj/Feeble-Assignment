@@ -19,7 +19,7 @@ function Header() {
 
                 <ul id="logo">
                     <li>
-                        <img src={LogoSVG} alt="Logo" />
+                        <img className="w-3/4 md:w-auto" src={LogoSVG} alt="Logo" />
                     </li>
                 </ul>
 
@@ -85,7 +85,7 @@ function Header() {
                     <li>
                         <button
                             type="button"
-                            className="bg-linear-to-r bg-size-200 bg-left hover:bg-right font-medium transition-all from-[#007AFF] text-base to-white py-2.75 px-4.5 text-white from-50% to-50% rounded-[43px] hover:bg-white hover:text-[#007AFF] shadow-sm shadow-neutral-500/25 duration-500"
+                            className="bg-linear-to-r bg-size-200 bg-left hover:bg-right font-medium transition-all from-[#007AFF] text-sm md:text-base to-white py-2.75 px-4.5 text-white from-50% to-50% rounded-[43px] hover:bg-white hover:text-[#007AFF] shadow-sm shadow-neutral-500/25 duration-500"
                         >
                             Contact Sales
                         </button>

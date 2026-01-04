@@ -17,22 +17,22 @@ function Main() {
                 <br />
                 for Teams and AI Workflows.
             </h2>
-            <p className="md:text-base text-sm text-center max-w-146.5 sm:px-8 md:p-0 mx-auto xl:text-[18px]">
+            <p className="md:text-base text-sm text-center max-w-146.5 px-8 md:p-0 mx-auto xl:text-[18px]">
                 Coup lets you, your team, or AI workflows send iMessages
                 directly from your phone number, running securely on your Mac or
                 Mac Mini.{" "}
             </p>
 
-            <div className="buttons mx-auto flex justify-between gap-3 mt-6">
+            <div className="buttons mx-auto flex justify-between gap-3 mt-6 md:flex-row flex-col">
                 <button
                     type="button"
-                    className="py-3 px-5 bg-[#007AFF] text-white text-[18px] font-medium rounded-full"
+                    className="py-3 px-5 bg-[#007AFF] text-white text-sm md:text-[18px] font-medium rounded-full"
                 >
                     Get Started
                 </button>
                 <button
                     type="button"
-                    className="flex py-3 px-5 text-[18px] font-medium gap-3 border border-[#6C788F] rounded-full"
+                    className="flex py-3 px-5 text-sm md:text-[18px] font-medium gap-3 border border-[#6C788F] rounded-full"
                 >
                     <img src={MacSVG} alt="Mac" />
                     <img src={BarSVG} alt="seperator" />

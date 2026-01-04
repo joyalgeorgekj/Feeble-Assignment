@@ -107,7 +107,7 @@ function Background() {
     ];
 
     return (
-        <div id="backgrounds">
+        <div id="backgrounds" className="*:-z-10">
             {backgrounds.map((val, ind) => (
                 <BGImage
                     key={ind}

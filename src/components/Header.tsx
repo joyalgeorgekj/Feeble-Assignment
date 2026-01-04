@@ -27,7 +27,7 @@ function Header() {
 
                 <ul
                     id="routes"
-                    className="hidden lg:flex gap-4 text-neutral-700"
+                    className="hidden lg:flex gap-4 text-[#8C97A8]"
                 >
                     {Object.keys(routes).map((val, ind) => (
                         <Links
@@ -47,7 +47,7 @@ function Header() {
                 {menuOpen && (
                     <ul
                         id="mobile-routes"
-                        className="lg:hidden p-14 flex flex-col gap-4 text-neutral-700 items-center absolute top-full right-0 left-0 bg-white shadow-md shadow-neutral-600"
+                        className="lg:hidden p-14 flex flex-col gap-4 text-[#8C97A8] items-center absolute top-full right-0 left-0 bg-white shadow-md shadow-neutral-600"
                     >
                         {Object.keys(routes).map((val, ind) => (
                             <Links
